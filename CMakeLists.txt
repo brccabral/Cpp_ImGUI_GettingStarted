@@ -22,6 +22,7 @@ message("GLFW_DIR ${GLFW_DIR}")
 target_include_directories(${PROJECT_NAME} PUBLIC ${GLFW_DIR}/include)
 target_link_directories(${PROJECT_NAME} PUBLIC ${GLFW_DIR}/lib-vc2022)
 target_link_libraries(${PROJECT_NAME} glfw3 opengl32)
+target_link_options(${PROJECT_NAME} PUBLIC /NODEFAULTLIB:msvcrt)
 
 else()
 
