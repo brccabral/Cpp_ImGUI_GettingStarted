@@ -27,7 +27,7 @@ target_link_options(${PROJECT_NAME} PUBLIC /NODEFAULTLIB:msvcrt)
 else()
 
 find_package(glfw3 REQUIRED)
-target_link_libraries(${PROJECT_NAME} glfw3 GL)
+target_link_libraries(${PROJECT_NAME} glfw GL)
 
 endif()
 
